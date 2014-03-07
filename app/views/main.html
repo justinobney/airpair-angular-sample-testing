@@ -1,0 +1,49 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+  </ul>
+  <h3 class="text-muted">testing</h3>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="product in products" ng-click="selectProduct(product)">
+        <td>{{product.name}}</td>
+        <td>{{product.cost}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{selectedProduct.name}}</h3>
+        </div>
+        <div class="panel-body">
+          <center>
+            <h1>{{selectedProduct.cost}}</h1>
+          </center>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <div class="well">
+      <center>
+        <h1 hover-effect>Hover over me</h1>
+      </center>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>
